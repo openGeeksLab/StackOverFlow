@@ -32,7 +32,6 @@ class Home extends Component{
 const mapStateToProps = function(state) {
   return {
     questions: state.questionsArray.questions,
-    // options: state.options.options,
   }
 }
 

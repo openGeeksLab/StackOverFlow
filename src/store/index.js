@@ -1,7 +1,10 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
+import {
+  createStore,
+  combineReducers,
+  applyMiddleware
+} from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import { createReactNavigationReduxMiddleware } from 'react-navigation-redux-helpers';
 import { navigationReducer } from '../navigation';
 import sagas from './sagas';
 import questionsReducer from './reducers/questionsReducer';

@@ -13,8 +13,6 @@ export default createReducer({
   }),
 
   [setPaginationQuestions]: (state, data) => {
-    console.log('State>>>', state)
-    console.log('Data>>>>', data);
     for(let i=0; i<20; i++){
       state.questions.items.push(data.items[i]);
     }
@@ -25,7 +23,6 @@ export default createReducer({
   },
 
   [setSearch]: (state, data) => {
-    console.log('in reducer, here data>', data);
     return {
       questions: data.data
     }

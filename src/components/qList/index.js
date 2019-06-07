@@ -1,14 +1,14 @@
 import React from 'react';
 import { FlatList } from 'react-native';
-
 import QuestionsItem from '../qItem';
+import styles from './styles';
 
 const QuestionsList = (props) => {
   const { questions, options } = props;
 
   return (
         <FlatList
-            style={{width: '100%', backgroundColor: '#6495ED',}}
+            style={styles.flatListCont}
             onEndReached={() => {
                 options.len = questions.items.length
                 props.onGetPagination(options)
